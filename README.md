@@ -19,10 +19,9 @@ https://github.com/user-attachments/assets/0e7d08ca-2ec1-45e6-a216-348061faa714
 ## Dependencies
 
 - [quickshell](https://git.outfoxxed.me/quickshell/quickshell)
-- jq
+- [jq](https://github.com/jqlang/jq)
 - file
-- ImageMagick (magick, with convert fallback)
-
+- [ImageMagick](https://github.com/ImageMagick/ImageMagick)
 ## Installation
 
 ### Arch
@@ -52,7 +51,8 @@ Example `config.json`
     "number_of_pictures": 6,
     "cache_batch_size": 20,
     "height": 500,
-    "x_factor": -0.25
+    "x_factor": -0.25,
+    "keep_open": false
 }
 ```
 
