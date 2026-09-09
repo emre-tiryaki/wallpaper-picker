@@ -79,7 +79,8 @@ PanelWindow {
         onSelected: (path, i) => {
             current_wallpaper.save(path.replace("//", "/"));
             Quickshell.execDetached(["bash", Quickshell.shellPath("commands.sh"), path.replace(/ /g, "\\ ")]);
-            Qt.quit();
+            if (!config.keep_open)
+                Qt.quit();
         }
 
         function selectCurrentWallpaper() {
