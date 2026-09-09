@@ -35,6 +35,7 @@ PanelWindow {
             property string cache_path
             property int number_of_pictures
             property string border_color
+            property bool keep_open
         }
     }
 
@@ -68,7 +69,8 @@ PanelWindow {
         function activateCurrent() {
             const path = folderModel.get(selectedIndex, "filePath")
             Quickshell.execDetached(["bash", Quickshell.shellPath("commands.sh"), path])
-            Qt.quit()
+            if (!configs.keep_open)
+                Qt.quit()
         }
 
         function clampX(x) {
