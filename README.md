@@ -14,7 +14,7 @@ https://github.com/user-attachments/assets/375e3696-e62d-48bf-8af6-18d2be86b224
 ## Dependencies
 
 - [quickshell](https://git.outfoxxed.me/quickshell/quickshell)
-
+[ImageMagick](https://github.com/ImageMagick/ImageMagick)
 ## Installation
 
 ### Arch
@@ -22,7 +22,7 @@ https://github.com/user-attachments/assets/375e3696-e62d-48bf-8af6-18d2be86b224
 Get Quickshell with yay (or your AUR helper of choice)
 
 ```bash
-yay -S quickshell
+yay -S quickshell imagemagick
 ```
 
 Now just clone this repo into Quickshell's config folder
