@@ -1,4 +1,3 @@
 #!/bin/bash
 
-awww img $1 -t grow --transition-duration 1
-
+"$HOME/.config/hypr-theme-manager/bin/set-wallpaper" "$1"
